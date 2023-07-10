@@ -1,12 +1,15 @@
 <script lang="ts">
-  import particles from "$lib/particles";
-  import { onMount } from "svelte";
+  import { resize, start, stop } from "$lib/particles";
+  import { onMount, onDestroy } from "svelte";
 
   let canvas: HTMLCanvasElement;
 
   onMount(() => {
-    particles(canvas);
+    start(canvas);
+
+    window.onresize = resize;
   });
+  onDestroy(stop);
 </script>
 
 <header class="h-screen w-full">
