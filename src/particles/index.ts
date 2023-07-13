@@ -74,14 +74,14 @@ function draw() {
   ctx.clearRect(0, 0, canvas.width, ctx.canvas.height);
   ctx.fillStyle = "white";
   for (let i = 0; i < particles.length; i++) {
-    const p = particles[i];
+    const p = particles[i]!;
 
     ctx.beginPath();
     ctx.arc(p.x, p.y, RADIUS, 0, Math.PI * 2);
     ctx.fill();
 
     for (let j = i + 1; j < particles.length; j++) {
-      const p2 = particles[j];
+      const p2 = particles[j]!;
       const distance = Math.sqrt((p.x - p2.x) ** 2 + (p.y - p2.y) ** 2);
       if (distance > maxLineDistance) continue;
 
