@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://gurgel.io/sitemap-index.xml
