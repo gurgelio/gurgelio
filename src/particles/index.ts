@@ -63,7 +63,6 @@ export function stop() {
 
 function update(time: DOMHighResTimeStamp) {
   const delta = deltaTime(time);
-  console.log(Math.floor(1 / delta));
   particles.forEach((p) => p.update(delta));
 
   draw();
