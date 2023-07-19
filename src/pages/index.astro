@@ -1,10 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+
+import ExternalLink from "../components/ExternalLink.astro";
+import Github from "../components/icons/Github.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
 ---
 
 <Layout title="Gurgel">
-	<main class="bg-neutral-800">
-    <Hero/>
-	</main>
+  <main
+    class="flex h-screen w-full items-center justify-center p-4 align-middle"
+  >
+    <Hero />
+    <div class="absolute bottom-0 flex h-16 gap-8 p-4">
+      <ExternalLink title="Github" href="https://github.com/gurgelio">
+        <Github />
+      </ExternalLink>
+      <ExternalLink title="LinkedIn" href="https://linkedin.com/gurgelio">
+        <LinkedIn />
+      </ExternalLink>
+    </div>
+  </main>
 </Layout>

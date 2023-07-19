@@ -1,0 +1,16 @@
+---
+import ArrowTopRightOnSquare from "./icons/ArrowTopRightOnSquare.astro";
+
+interface Props {
+  title: string;
+  href: string;
+}
+
+const { title, href } = Astro.props;
+---
+
+<a href={href} class="flex items-center" target="_blank">
+  <slot />
+  <span class="ml-2 mr-1 hidden md:block">{title}</span>
+  <ArrowTopRightOnSquare />
+</a>

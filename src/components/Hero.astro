@@ -1,13 +1,13 @@
 <script>
-  import { resize, start } from '../particles';
-  start(document.getElementById('canvas') as HTMLCanvasElement);
-  addEventListener('resize', resize);
+  import { resize, start } from "../particles";
+  start(document.getElementById("canvas") as HTMLCanvasElement);
+  addEventListener("resize", resize);
 </script>
 
 <header>
-  <div class="flex flex-col items-center justify-center h-screen gap-3">
-    <h1 class="text-6xl font-bold tracking-wide text-neutral-100">Leonardo Gurgel</h1>
-    <p class="text-xl tracking-widest text-neutral-400">Full Stack Developer</p>
+  <div class="flex h-screen flex-col items-center justify-center gap-3">
+    <h1 class="text-6xl font-bold tracking-wide text-white">Leonardo Gurgel</h1>
+    <p class="text-xl tracking-widest text-neutral-300">Full Stack Developer</p>
   </div>
-  <canvas class="flex h-full w-full absolute top-0 left-0" id="canvas"></canvas>
+  <canvas class="absolute left-0 top-0 flex h-full w-full" id="canvas"></canvas>
 </header>
