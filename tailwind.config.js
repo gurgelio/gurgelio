@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,astro,ts,tsx,mdx}"],
+  content: ["./src/**/*.{html,astro,md,mdx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -8,5 +8,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
