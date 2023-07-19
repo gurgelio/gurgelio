@@ -1,6 +1,9 @@
 ---
+import "../style/global.css";
+
+const description = "TODO";
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,23 +11,36 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <head>
+    <!-- basic config -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
 
-    <!-- sitemap -->
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <!-- twitter & opengraph -->
+    <meta
+      name="twitter:image"
+      content="https://gurgel.io/images/twitter-card.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@gurgelio" />
+    <meta name="og:title" content={title} />
+    <meta name="og:description" content={description} />
+    <meta name="og:image" content="https://gurgel.io/images/twitter-card.png" />
 
     <!-- metadata -->
-		<title>{title}</title>
-		<meta name="description" content="Astro description">
-		<meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
 
     <!-- styles -->
-    <link href="fonts/cantarell/cantarell.css" rel="stylesheet">
-	</head>
-	<body>
-		<slot />
-	</body>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#171717" />
+
+    <!-- TODO: plausible analytics -->
+  </head>
+  <body
+    class="h-screen bg-gradient-to-b from-neutral-800 to-neutral-900 text-white antialiased"
+  >
+    <slot />
+  </body>
 </html>
