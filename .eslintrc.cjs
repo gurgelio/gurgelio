@@ -10,7 +10,7 @@ module.exports = {
   plugins: ["@typescript-eslint", "astro"],
   parserOptions: {
     sourceType: "module",
-    ecmaVersion: 2020
+    ecmaVersion: 2020,
   },
   env: {
     browser: true,
