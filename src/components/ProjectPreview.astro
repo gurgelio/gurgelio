@@ -1,0 +1,18 @@
+---
+import type { Project } from "../types";
+
+export interface Props {
+  project: Project;
+  slug: string;
+}
+
+const { project, slug } = Astro.props;
+---
+
+<a
+  class="flex overflow-hidden rounded-3xl border-2 border-transparent outline-0 outline-sky-500 hover:outline-1"
+  href={`/projects/${slug}`}
+>
+  <img class="relative object-cover" src={project.image} alt={project.title} />
+  <p>{project.title}</p>
+</a>

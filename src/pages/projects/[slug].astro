@@ -1,0 +1,35 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import type { Project } from "../../types";
+import getSlugFromPath from "../../utils/getSlugFromPath";
+
+export async function getStaticPaths() {
+  const allPosts = await Astro.glob<Project>("../../content/projects/*.md");
+
+  const paths = allPosts.map((project) => ({
+    params: {
+      slug: getSlugFromPath(project.file),
+    },
+    props: {
+      project,
+    },
+  }));
+
+  return paths;
+}
+
+const { project } = Astro.props;
+---
+
+<Layout title={`Gurgel - ${project.title}`}>
+  <main class="flex min-h-full w-full justify-center">
+    <div class="max-w-full px-4 pt-8 lg:w-[42rem] lg:px-0 xl:w-[64rem]">
+      <article class="prose prose-lg max-w-none pb-10 lg:prose-xl">
+        <project.Content />
+      </article>
+      <div class="pb-8">
+        <a href="/projects">{"<- Voltar para Projetos"}</a>
+      </div>
+    </div>
+  </main>
+</Layout>
