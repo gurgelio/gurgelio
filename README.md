@@ -48,15 +48,3 @@
 <img width="49.75%" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=gurgelio&theme=github_dark" />
 <img width="49.75%" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=gurgelio&theme=github_dark" />
 </div>
-<br/><br/>
-
-# 📫 Connect With Me
-
-<div align="center">
-<a href="https://www.linkedin.com/in/gurgelio/" target="_blank">
-<img src="https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt=linkedin style="margin-bottom: 5px;" />
-</a>
-<!-- <a href="https://gurgel.io" target="_blank">
-<img src="https://img.shields.io/badge/mysite-b200ed.svg?&style=for-the-badge&logo=gnometerminal&logoColor=white" alt=mysite style="margin-bottom: 5px;" />
-</a>    -->
-</div>  
