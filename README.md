@@ -42,9 +42,9 @@
 
 # 📊 GitHub Stats
 
-<img width="100%" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=gurgelio&theme=github_dark" />
+<img width="100%" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=leogurja&theme=github_dark" />
 <br/><br/>
 <div>
-<img width="49.75%" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=gurgelio&theme=github_dark" />
-<img width="49.75%" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=gurgelio&theme=github_dark" />
+<img width="49.75%" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=leogurja&theme=github_dark" />
+<img width="49.75%" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=leogurja&theme=github_dark" />
 </div>
